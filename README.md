@@ -61,22 +61,6 @@ The application uses React Context API for state management and Local Storage fo
 
 ---
 
-# Folder Structure
-
-```text
-Employee-Task-Management/
-│
-├── src/
-│   ├── components/
-│   ├── context/
-│   ├── utils/
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── public/
-├── package.json
-└── README.md
-```
 
 ---
 
