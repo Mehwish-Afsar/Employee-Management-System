@@ -74,7 +74,7 @@ git clone https://github.com/Mehwish-Afsar/Employee-Management-System.git
 ## Go to Project Folder
 
 ```bash
-cd Employee-Task-Management
+cd Employee-Management-System
 ```
 
 ---
@@ -149,21 +149,21 @@ You can also use any employee credentials available in the LocalStorage data.
 
 ## Login Page
 
-[Login Page]<img width="1365" height="603" alt="Login" src="https://github.com/user-attachments/assets/69c1b017-6b76-43be-8511-0b4e66c22281" />
+<img width="1365" height="603" alt="Login" src="https://github.com/user-attachments/assets/69c1b017-6b76-43be-8511-0b4e66c22281" />
 *Figure 1: Login interface for Admin and Employee authentication.*
 
 ---
 
 ## Admin Dashboard
 
-[Admin Dashboard]<img width="1366" height="744" alt="Admin Dashboard" src="https://github.com/user-attachments/assets/47736a10-d37e-4c9c-b7d7-45f970c09982" />
+<img width="1366" height="744" alt="Admin Dashboard" src="https://github.com/user-attachments/assets/47736a10-d37e-4c9c-b7d7-45f970c09982" />
 *Figure 2: Admin Dashboard showing task creation and employee management.*
 
 ---
 
 ## Employee Dashboard
 
-[Employee Dashboard]<img width="1362" height="603" alt="Employee Dashboard" src="https://github.com/user-attachments/assets/421dc57f-e84f-4dba-bbe5-00cad033a210" />
+<img width="1362" height="603" alt="Employee Dashboard" src="https://github.com/user-attachments/assets/421dc57f-e84f-4dba-bbe5-00cad033a210" />
 *Figure 3: Employee Dashboard displaying assigned tasks and task statistics.*
 
 ---
