@@ -61,9 +61,6 @@ The application uses React Context API for state management and Local Storage fo
 
 ---
 
-
----
-
 # Installation
 
 ## Clone Repository
