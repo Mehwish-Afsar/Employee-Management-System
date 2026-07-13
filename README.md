@@ -66,7 +66,7 @@ The application uses React Context API for state management and Local Storage fo
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Employee-Task-Management.git
+git clone https://github.com/Mehwish-Afsar/Employee-Management-System.git
 ```
 
 ---
