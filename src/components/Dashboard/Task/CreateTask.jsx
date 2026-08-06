@@ -1,6 +1,12 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../../context/AuthProvider";
 
+const CATEGORIES = ["Development", "Design", "Testing", "Documentation", "Review", "Support", "Other"];
+
+const inputClass =
+    "w-full rounded-xl border border-white/10 bg-[#0B0D11] px-3.5 py-2.5 text-sm text-white placeholder:text-white/30 outline-none transition focus:border-amber-400/60 focus:ring-2 focus:ring-amber-400/20";
+const labelClass = "mb-1.5 block text-xs font-medium text-white/60";
+
 const CreateTask = () => {
     const [userData, setUserData] = useContext(AuthContext);
 
@@ -43,59 +49,68 @@ const CreateTask = () => {
     };
 
     return (
-        <div className="bg-[#1C1C1C] mt-5 rounded">
-            <form onSubmit={submitHandler} className="flex flex-wrap w-full items-start justify-between p-5">
-                <div className="w-1/2">
-                    <div>
-                        <h3 className="text-sm text-gray-300 mb-0.5">Task title</h3>
-                        <input 
-                            type="text" 
+        <div className="rounded-2xl border border-white/10 bg-[#12151B] p-6">
+            <h2 className="mb-5 text-sm font-semibold uppercase tracking-wide text-white/50">Create a task</h2>
+
+            <form onSubmit={submitHandler} className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+                <div className="grid flex-1 grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div className="sm:col-span-2">
+                        <label className={labelClass}>Task title</label>
+                        <input
+                            type="text"
                             placeholder="Make a UI Design"
-                            className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
+                            className={inputClass}
                             onChange={(e) => setTaskTitle(e.target.value)}
                             value={taskTitle}
                         />
                     </div>
                     <div>
-                        <h3 className="text-sm text-gray-300 mb-0.5">Date</h3>
+                        <label className={labelClass}>Date</label>
                         <input
-                            type="date" 
-                            className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
+                            type="date"
+                            className={`${inputClass} [color-scheme:dark]`}
                             onChange={(e) => setTaskDate(e.target.value)}
                             value={taskDate}
                         />
                     </div>
                     <div>
-                        <h3 className="text-sm text-gray-300 mb-0.5">Assign to</h3>
+                        <label className={labelClass}>Assign to</label>
                         <input
-                            type="text" 
-                            placeholder="employee Name"
-                            className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
+                            type="text"
+                            placeholder="Employee name"
+                            className={inputClass}
                             onChange={(e) => setAssignTo(e.target.value)}
                             value={assignTo}
                         />
                     </div>
-                    <div>
-                        <h3 className="text-sm text-gray-300 mb-0.5">Category</h3>
-                        <input 
-                            type="text" 
-                            placeholder="design, dev, etc"
-                            className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
+                    <div className="sm:col-span-2">
+                        <label className={labelClass}>Category</label>
+                        <select
+                            className={`${inputClass} appearance-none`}
                             onChange={(e) => setCategory(e.target.value)}
                             value={category}
-                        />
+                        >
+                            <option value="" disabled>Select a category</option>
+                            {CATEGORIES.map((c) => (
+                                <option key={c} value={c}>{c}</option>
+                            ))}
+                        </select>
                     </div>
                 </div>
 
-                <div className="w-2/5 flex flex-col items-start">
-                    <h3 className="text-sm text-gray-300 mb-0.5">Description</h3>
-                    <textarea 
-                        className="text-sm py-1 px-2 w-full rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
+                <div className="flex w-full flex-col md:w-72">
+                    <label className={labelClass}>Description</label>
+                    <textarea
+                        rows={4}
+                        className={`${inputClass} mb-4 resize-none`}
                         onChange={(e) => setTaskDescription(e.target.value)}
                         value={taskDescription}
                     ></textarea>
-                    <button className="bg-emerald-500 py-3 px-5 hover:bg-emerald-600 rounded text-sm mt-4 w-full text-white">
-                        Create Task
+                    <button
+                        type="submit"
+                        className="w-full rounded-xl bg-amber-500 py-2.5 text-sm font-semibold text-[#12151B] transition hover:bg-amber-400 active:scale-[.98]"
+                    >
+                        Create task
                     </button>
                 </div>
             </form>

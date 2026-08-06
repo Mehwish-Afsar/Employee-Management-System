@@ -7,17 +7,17 @@ const AuthProvider = ({ children }) => {
   const [userData, setUserData] = useState([]);
 
   useEffect(() => {
-    setLocalStorage() 
+    setLocalStorage();
 
-    const { employees } = getLocalStorage()
-    setUserData(employees)
+    const { employees } = getLocalStorage();
+    setUserData(employees);
   }, []);
 
   useEffect(() => {
     if (userData && userData.length > 0) {
-      localStorage.setItem("employees", JSON.stringify(userData))
+      localStorage.setItem("employees", JSON.stringify(userData));
     }
-  }, [userData])
+  }, [userData]);
 
   return (
     <AuthContext.Provider value={[userData, setUserData]}>
@@ -26,4 +26,4 @@ const AuthProvider = ({ children }) => {
   );
 };
 
-export default AuthProvider
+export default AuthProvider;

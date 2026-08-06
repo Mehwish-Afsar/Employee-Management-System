@@ -5,14 +5,12 @@ import TaskList from "../Tasklist/TaskList";
 
 const EmployeeDashboard = (props) => {
     return (
-        <>
-            <div className="bg-[#1C1C1C] h-screen w-screen text-white px-15 py-10">
-                <Header changeUser={props.changeUser} data={props.data} />
-                <EmployeeCard data={props.data} />
-                <TaskList data={props.data} />
-            </div>
-        </>
-    )
-}
+        <div className="min-h-screen w-full bg-[#0B0D11] px-6 py-10 text-white sm:px-10 lg:px-16">
+            <Header changeUser={props.changeUser} data={props.data} />
+            <EmployeeCard data={props.data} />
+            <TaskList data={props.data} />
+        </div>
+    );
+};
 
-export default EmployeeDashboard
+export default EmployeeDashboard;
