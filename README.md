@@ -149,21 +149,21 @@ You can also use any employee credentials available in the LocalStorage data.
 
 ## Login Page
 
-<img width="1365" height="603" alt="Login" src="https://github.com/user-attachments/assets/69c1b017-6b76-43be-8511-0b4e66c22281" />
+<img width="1365" height="596" alt="Login_page" src="https://github.com/user-attachments/assets/56b501ed-d827-4bb2-9c87-827e1f6cb68a" />
 *Figure 1: Login interface for Admin and Employee authentication.*
 
 ---
 
 ## Admin Dashboard
 
-<img width="1366" height="744" alt="Admin Dashboard" src="https://github.com/user-attachments/assets/47736a10-d37e-4c9c-b7d7-45f970c09982" />
+<img width="1366" height="901" alt="Admin_Dashboard" src="https://github.com/user-attachments/assets/823aaa7b-ef92-4c6b-a475-8bdaee79248a" />
 *Figure 2: Admin Dashboard showing task creation and employee management.*
 
 ---
 
 ## Employee Dashboard
 
-<img width="1362" height="603" alt="Employee Dashboard" src="https://github.com/user-attachments/assets/421dc57f-e84f-4dba-bbe5-00cad033a210" />
+<img width="1345" height="599" alt="Employee_Dashboard" src="https://github.com/user-attachments/assets/7759bd21-d50e-48de-a3ca-19ac277c1587" />
 *Figure 3: Employee Dashboard displaying assigned tasks and task statistics.*
 
 ---
